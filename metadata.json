@@ -1,0 +1,5 @@
+{
+  "name": "ResumeAI Optimizer",
+  "description": "A professional tool that analyzes your resume against job descriptions, providing ratings, identifying errors, and suggesting improvements using Gemini AI.",
+  "requestFramePermissions": []
+}
