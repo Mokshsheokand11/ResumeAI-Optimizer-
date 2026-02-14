@@ -118,7 +118,7 @@ export const analyzeResume = async (
   } catch (error: any) {
     console.error("Gemini Analysis Error:", error);
     if (error.message?.includes("400") || error.message?.includes("INVALID_ARGUMENT")) {
-      throw new Error("The document could not be processed. Ensure the file is a standard PDF or clear image under 4MB.");
+      throw new Error("The document could not be processed. Ensure the file is a standard PDF or clear image under 69MB.");
     }
     throw error;
   }

@@ -19,8 +19,9 @@ const App: React.FC = () => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      if (file.size > 4 * 1024 * 1024) {
-        setError("File size too large. Please upload a file smaller than 4MB.");
+      // Updated limit to 69MB
+      if (file.size > 69 * 1024 * 1024) {
+        setError("File size too large. Please upload a file smaller than 69MB.");
         return;
       }
       
@@ -149,7 +150,7 @@ const App: React.FC = () => {
                           <svg className="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
                         </div>
                         <p className="text-slate-600 font-medium">Click or drag to upload</p>
-                        <p className="text-slate-400 text-xs">Supports PDF, PNG, JPG, WEBP (Limit 4MB)</p>
+                        <p className="text-slate-400 text-xs">Supports PDF, PNG, JPG, WEBP (Limit 69MB)</p>
                       </div>
                     )}
                   </div>
